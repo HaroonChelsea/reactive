@@ -4,10 +4,10 @@ import { NavigationProp } from "@react-navigation/native";
 import { MainStackParamList } from "./routes";
 
 type Props = {
-  navigation: NavigationProp<MainStackParamList, "App">;
+  navigation: NavigationProp<MainStackParamList, "Main">;
 };
 
-const App = ({ navigation }: Props) => {
+const Main = ({ navigation }: Props) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => navigation.navigate("PanGesture")}>
@@ -17,7 +17,7 @@ const App = ({ navigation }: Props) => {
   );
 };
 
-export default App;
+export default Main;
 
 const styles = StyleSheet.create({
   container: {
